@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  border: 5px yellow;
+}
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h2>TEXT LAYOUT</h2>
+<p>Center text in image and a fixed position text:</p>
+
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&w=1000&q=80" alt="sunset" width="1000" height="300">
+  <div class="center">Centered</div>
+</div>
+<div class="fixed">
+This div element has position: fixed;
+
+</body>
+</html>
