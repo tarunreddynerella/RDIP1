@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+  border: 1px yelow;
+  text-align: center;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: hotpink;
+}
+</style>
+</head>
+<body>
+
+<h2>MARKS Table</h2>
+
+<table>
+  <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td>ML</td>
+    <td>90</td>
+    </tr>
+  <tr>
+    <td>WT</td>
+    <td>97</td>
+  </tr>
+  <tr>
+    <td>DS</td>
+    <td>95</td>
+  </tr>
+  <tr>
+    <td>DAA</td>
+    <td>92</td>
+  </tr>
+  <tr>
+</table>
+
+<p id="x"></p>
+<script>
+var avg = aFunction(90, 97, 95, 92);
+
+function aFunction(a, b, c, d) {
+  return "Average = " + (a + b + c + d)/4;
+  }
+document.getElementById("x").innerHTML = avg; 
+</script>
+</body>
+</html>
