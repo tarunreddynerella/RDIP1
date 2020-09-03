@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+JavaScript Regular Expressions
+</title>
+</head>
+
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+<p>Click to search for "ban" in the string.</p>
+
+<button onclick="search()">Search</button>
+
+<p id="z"></p>
+
+<script>
+function search() {
+  var str = "The Indian government has banned 118 chinese apps today. ";
+  var x = /ban/i;
+  var y = str.match(x);
+  document.getElementById("z").innerHTML = y;
+}
+</script>
+
+</body>
+</html>
