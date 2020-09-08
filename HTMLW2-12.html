@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Please input a number between 10 and 100:</p>
+
+<input id="w" type="text">
+<button type="button" onclick="xFunction()">Test the Input</button>
+<p id="z"></p>
+
+<script>
+function xFunction() {
+  var y, x;
+  y = document.getElementById("z");
+  y.innerHTML = "";
+  x = document.getElementById("w").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 10)  throw "too low";
+    if(x > 100)   throw "too high";
+  }
+  catch(err) {
+    y.innerHTML = "Input is " + err;
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
