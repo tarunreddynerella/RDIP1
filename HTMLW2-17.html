@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GET() and POST()</title>
+<style>
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("form").submit(function(event){
+        event.preventDefault();
+        
+		var actionFile = $(this).attr("action");
+
+        var formValues = $(this).serialize();
+        
+        $.post(actionFile, formValues, function(data){
+            $("#result").html(data);
+        });
+    });
+});
+</script>
+</head>
+<body>
+    <form action="/examples/php/display-comment.php">
+        <label>Name: <input type="text" name="name"></label>
+        <label>Comment: <textarea cols="50" name="comment"></textarea></label>
+        <input type="submit" value="Send">
+    </form>
+    <div id="result"></div>
+</body>
+</html>
