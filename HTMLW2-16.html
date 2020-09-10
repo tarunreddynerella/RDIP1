@@ -1,0 +1,57 @@
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+    <script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#z").toggle(); 
+            }); 
+        }); 
+    </script> 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+    <style> 
+        #z { 
+            color: yellow; 
+            border: 9px solid black; 
+            width: 260px; 
+            text-align: center; 
+        } 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:green;
+    border:solid 5px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:blue;
+    border:solid 10px;
+}
+    </style> 
+    </style> 
+</head> 
+  
+<body> 
+  
+    <div id="z">toggle</div> 
+  
+    <button>Click to hide() and show() the above division</button> 
+  <div class="divClass1">DOULECLICK TO CHANGE COLOR</div>
+</body> 
+  
+</html> 
